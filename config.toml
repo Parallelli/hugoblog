@@ -3,7 +3,7 @@
 # And see https://gohugo.io/getting-started/configuration/ .
 
 baseURL = "https://parallelli.github.io/"
-title = "Jane - A super concise theme for Hugo"
+title = "粒粒万象"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
@@ -12,7 +12,7 @@ hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否�
 paginate = 3              # Number of articles displayed on the homepage  # 首页每页显示的文章数
 rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
 disqusShortname = ""      # disqus_shortname
-googleAnalytics = ""      # UA-XXXXXXXX-X
+googleAnalytics = "UA-179517423-1"      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
 # language support # en / zh-cn / other... translations present in i18n/
@@ -21,7 +21,7 @@ defaultContentLanguage = "en"           # Default language to use
   languageCode = "en"
 
 [author]                  # essential                     # 必需
-  name = "parallelli"
+  name = "Lillian"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -34,15 +34,10 @@ defaultContentLanguage = "en"           # Default language to use
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "All Posts"
+  name = "All"
   weight = 20
-  identifier = "all_posts"
+  identifier = "all"
   url = "/post/"
-[[menu.main]]
-  name = "Categories"
-  weight = 40
-  identifier = "categories"
-  url = "/categories/"
 
 
 [params]
@@ -50,23 +45,36 @@ defaultContentLanguage = "en"           # Default language to use
   homeFullContent = false   # if false, show post summaries on home page. Otherwise show full content.
   rssFullContent = true     # if false, Rss feed instead of the summary
 
-  # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-   logoTitle = "Lillian"        # default: the title value    # 默认值: 上面设置的title值
+  # site info (optional)                                
+  # logoTitle = ""        # default: the title value    # 默认值: 上面设置的title值
    keywords = ["Hugo", "theme","jane"]
    description = "Hugo theme jane example site."
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"
 
+  # Show word count and read time ?
+  moreMeta = true
+
+  # Show author info below the article
+  showAuthorInfo = true
+
   # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
-  # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
+  # Some global configs, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
   toc = true                                                                            # 是否开启目录
   photoswipe = true         # see https://github.com/dimsemenov/PhotoSwipe            # 是否启用PhotoSwipe（图片可点击）
-  contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
+  # contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
   customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
 
+  [params.utteranc]         # utteranc is a comment system based on GitHub issues. see https://utteranc.es
+    enable = false
+    repo = "xianmin/comments-for-hugo-theme-jane"    # The repo to store comments
+    issueTerm = "pathname"
 
+
+  [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
+    enable = false
