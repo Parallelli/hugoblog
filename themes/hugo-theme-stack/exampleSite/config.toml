@@ -2,10 +2,9 @@ baseurl = "https://example.com"
 languageCode = "en-us"
 theme = "hugo-theme-stack"
 paginate = 5
-title = "Lillian Xiong"
+title = "Example Site"
 disqusShortname = "hugo-theme-stack"            # Change it to your Disqus shortname before using
 DefaultContentLanguage = "en"                   # Theme i18n support
-# enableEmoji = false
 
 [permalinks]
     post = "/p/:slug/"
@@ -13,14 +12,15 @@ DefaultContentLanguage = "en"                   # Theme i18n support
     
 [params]
     mainSections = ["post"]
-    # featuredImageField = "image"
+    featuredImageField = "image"
     rssFullContent = true
     [params.dateFormat]
         published = "Jan 02, 2006"
         lastUpdated = "Jan 02, 2006 15:04 MST"
     [params.sidebar]
-        avatar = "img/profile.jpg"
-        subtitle = "我只愿面朝大海，春暖花开."
+        emoji = "🍥"
+        avatar = "img/avatar.png"
+        subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     [params.article]
         math = false
         [params.article.license]
@@ -31,8 +31,7 @@ DefaultContentLanguage = "en"                   # Theme i18n support
         # Only Disqus is available so far
         provider = "disqus"
     [params.widgets]
-        # enabled = ['archives', 'tag-cloud']
-        enabled = []
+        enabled = ['archives', 'tag-cloud']
         [params.widgets.archives]
             limit = 5
             ### Archives page relative URL
