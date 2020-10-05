@@ -1,11 +1,10 @@
-baseurl = "https://example.com"
+baseurl = "https://parallelli.github.io/"
 languageCode = "en-us"
 theme = "hugo-theme-stack"
 paginate = 5
 title = "Lillian Xiong"
-disqusShortname = "hugo-theme-stack"            # Change it to your Disqus shortname before using
+disqusShortname = "parallelli"            # Change it to your Disqus shortname before using
 DefaultContentLanguage = "en"                   # Theme i18n support
-# enableEmoji = false
 
 [permalinks]
     post = "/p/:slug/"
@@ -20,7 +19,7 @@ DefaultContentLanguage = "en"                   # Theme i18n support
         lastUpdated = "Jan 02, 2006 15:04 MST"
     [params.sidebar]
         avatar = "img/profile.jpg"
-        subtitle = "我只愿面朝大海，春暖花开."
+        subtitle = "微信公众号：粒粒万象."
     [params.article]
         math = false
         [params.article.license]
