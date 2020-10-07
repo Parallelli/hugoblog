@@ -2,9 +2,10 @@
 {{ define "main" }}
     {{ partial "article/article.html" . }}
 
+    <!--  remove comments section from "About" Page
     {{ if or (not (isset .Params "comments")) (eq .Params.comments "true")}} 
         {{ partial "comments/include" . }}
-    {{ end }}
+    {{ end }} -->
 
     {{ partialCached "footer/footer" . }}
 
